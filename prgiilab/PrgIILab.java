@@ -6,6 +6,7 @@ package prgiilab;
 
 
 import IntfCaballo.CaballoTablero;
+import OchoReinas.OchoReinas;
 import RecorridoCaballo.Caballo;
 import java.util.Scanner;
 import javax.swing.*;
@@ -22,7 +23,13 @@ public class PrgIILab {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        /*
+        int n = 8;
+        OchoReinas.resolverProblemaReinas(n);
         
+        }
+        
+        /*
         Scanner scanner = new Scanner(System.in);
         int N = 8; // Tamaño del tablero
         int[][] tablero = new int[N][N];
@@ -59,8 +66,10 @@ public class PrgIILab {
     }
 }
     
-        /*
-        int N = 8;
+*/
+////////////////////////////////////////////////////////////////////////////////////////
+        
+         int N = 8;
         int[][] tablero = new int[N][N];
         Caballo caballo = new Caballo(tablero);
 
@@ -85,8 +94,6 @@ public class PrgIILab {
         } else {
             JOptionPane.showMessageDialog(frame, "No se encontró una solución.");
         }
-        
     }
-
 }
-*/
+

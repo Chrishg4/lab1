@@ -37,7 +37,7 @@ public class OchoReinas {
 
         return false; 
     }
-
+/*
     public static void resolverProblemaReinas(int n) {
         int[] tablero = new int[n]; 
         for (int i = 0; i < n; i++) {
@@ -50,5 +50,19 @@ public class OchoReinas {
             System.out.println("No hay solución.");
         }
     }
+    */
+       public static void resolverProblemaReinas(int n) {
+        int[] tablero = new int[n]; 
+        for (int i = 0; i < n; i++) {
+            tablero[i] = -1; 
+        }
+
+        if (OchoReinas.resolver8Reinas(tablero, 0, n)) {
+            new TableroOchoReinas(tablero);
+        } else {
+            System.out.println("No hay solución.");
+        }
+    }
+
 }
 
